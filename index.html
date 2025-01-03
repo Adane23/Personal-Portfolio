@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adane Berhanu Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/cfaf3dbcca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.png" alt="logo" class="logo">
+                <i class=" icannot fa-solid fa-bars" onclick="openmenu()"></i>
+                <ul id="side-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                
+            </nav>
+            
+            <div class="header-text">
+                <h1><span>Hi, I'm</span> <br> Adane Berhanu</h1>
+                <p>Software Engineer/Full-Stack Developer</p>
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/about-me.png" alt="profile" class="profile">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <div class="about-section">
+                        <div id="paragraph-container">
+                            <p class="about-text" id="paragraph-1">I am a motivated and skilled software engineer with a Bachelor’s degree in Software Engineering from the University of Texas at Dallas. With a solid foundation in full-stack development, database management, and modern software development methodologies, I am dedicated to building impactful and efficient software solutions. My academic journey and hands-on experience have equipped me with the technical expertise and problem-solving abilities required to excel in today’s fast-paced tech environment.</p>
+                    
+                            <p class="about-text" id="paragraph-2" style="display: none;">Throughout my academic and project experience, I have developed and deployed dynamic web applications, managed scalable cloud-based solutions, and contributed to the optimization of project workflows using cutting-edge tools and techniques. My commitment to continuous learning has allowed me to excel in various programming languages, frameworks, and development tools, such as Java, Spring Boot, React, Docker, and Kubernetes. From implementing robust authentication systems to designing interactive dashboards, I thrive on creating user-centric solutions that are efficient, secure, and impactful.</p>
+                    
+                            <p class="about-text" id="paragraph-3" style="display: none;">Beyond technical proficiency, I am passionate about collaboration and innovation. I thrive in team environments that leverage Agile methodologies and encourage creative problem-solving. By combining technical know-how with strong communication and leadership skills, I aim to contribute to projects that drive progress and deliver meaningful user experiences.</p>
+                        </div>
+                        <button id="next-button">Next</button>
+                    </div>
+                    
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills & Tools</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="skills-card">
+                            <h3>Programming Languages</h3>
+                            <p>Java</p>
+                        </div>
+                        <div class="skills-card">
+                            <h3>Web Development</h3>
+                            <p>HTML, CSS, JavaScript, jQuery, Node.js, React, Bootstrap</p>
+                        </div>
+                        <div class="skills-card">
+                            <h3>Build Tools</h3>
+                            <p>Maven</p>
+                        </div>
+                        <div class="skills-card">
+                            <h3>Web Services & APIs</h3>
+                            <p>REST API</p>
+                        </div>
+                        <div class="skills-card">
+                            <h3>DevOps & Containerization</h3>
+                            <p>Docker, Kubernetes, Jenkins</p>
+                        </div>
+                        <div class="skills-card">
+                            <h3>Frameworks</h3>
+                            <p>Spring Boot, Spring Security, Express</p>
+                        </div>
+                        <div class="skills-card">
+                            <h3>Testing Tools</h3>
+                            <p>JUnit</p>
+                        </div>
+                        <div class="skills-card">
+                            <h3>Cloud Services</h3>
+                            <p>AWS</p>
+                        </div>
+                        <div class="skills-card">
+                            <h3>Database Management</h3>
+                            <p>MySQL, Postgres, MongoDB</p>
+                        </div>
+                        <div class="skills-card">
+                            <h3>Version Control</h3>
+                            <p>GitHub</p>
+                        </div>
+                        <div class="skills-card">
+                            <h3>Software & Platforms</h3>
+                            <p>IntelliJ IDEA, Eclipse, Visual Studio Code, Windows, Linux, iOS</p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="tab-contents" id="experience">
+                        <div class="experience-card">
+                            <h3>Jira TimeCheck Module</h3>
+                            <p><strong>Overview:</strong> Real-time data extraction and analysis integrated with Jira API.</p>
+                            <p><strong>Technologies:</strong> React, Java, Spring Boot, REST API, Agile, CI/CD.</p>
+                            <p><strong>Key Features:</strong> Interactive metrics dashboard, automated reporting.</p>
+                        </div>
+                        <div class="experience-card">
+                            <h3>Todo List Web Application</h3>
+                            <p><strong>Features:</strong> Authentication, CRUD, user session management.</p>
+                            <p><strong>Technologies:</strong> Java, Spring Boot, Spring Security, H2 Database.</p>
+                        </div>
+                        <div class="experience-card">
+                            <h3>Hotel Management System - Megenagna Hotel</h3>
+                            <p><strong>Features:</strong> Booking management, secure authentication.</p>
+                            <p><strong>Technologies:</strong> React, Spring Boot, SQL, JWT.</p>
+                        </div>
+                        <div class="experience-card">
+                            <h3>Public School Student Information System</h3>
+                            <p><strong>Description:</strong> Designed a relational database.</p>
+                            <p><strong>Technologies:</strong> MySQL, PHP, HTML, CSS.</p>
+                        </div>
+                        <div class="experience-card">
+                            <h3>Guestbook Application</h3>
+                            <p><strong>Description:</strong> Deployed with Kubernetes and Docker, focused on scalability.</p>
+                            <p><strong>Tools:</strong> IBM Cloud, Horizontal Pod Autoscaler.</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <div class="education-card">
+                            <h3>Bachelor’s in Software Engineering</h3>
+                            <p><strong>Institution:</strong> University of Texas at Dallas</p>
+                            <p><strong>Graduation Date:</strong> December 2024</p>
+                           
+                        </div>
+                        <div class="education-card">
+                            <h3>Associate’s in Software Engineering</h3>
+                            <p><strong>Institution:</strong> Dallas College</p>
+                            <p><strong>Graduation Date:</strong> December 2022</p>
+                           
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <!-- Service 1 -->
+            <div class="service-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Web Application Development</h2>
+                <p>Building dynamic, user-friendly web applications with modern tools like Java, JavaScript, React, Spring Boot, and Node.js.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-item">
+                <i class="fa-solid fa-layer-group"></i>
+                <h2>Full-Stack Development</h2>
+                <p>End-to-end development of full-stack applications, including database, backend, and frontend integration.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-item">
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Design & Management</h2>
+                <p>Designing efficient databases and optimizing data storage for scalable and reliable solutions.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-item">
+                <i class="fa-solid fa-cloud"></i>
+                <h2>DevOps & Cloud Deployment</h2>
+                <p>Deploying and managing cloud-based solutions with Docker, Kubernetes, and AWS for scalability and reliability.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-item">
+                <i class="fa-solid fa-bug"></i>
+                <h2>Testing & Quality Assurance</h2>
+                <p>Ensuring software quality with rigorous testing techniques like Unit Testing, CI/CD, and debugging.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-item">
+                <i class="fa-solid fa-clipboard-check"></i>
+                <h2>Project Management</h2>
+                <p>Managing software development projects using Agile/Scrum methodologies for efficient delivery.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <!-- Portfolio Item 1 -->
+            <div class="work">
+                
+                <img src="images/portfolio-item-1.jpg" alt="Portfolio Item 1">
+                <div class="layer">
+                    <h3>Jira Project Management Tool</h3>
+                     <p>A project management tool that integrates with the Jira API to optimize team performance. It provides real-time data extraction and analytics for projects, sprints, and team metrics, enhancing workflow efficiency. </p>
+                    <a href="https://github.com/Adane23/Jira-TimeCheck-Module-Project-Management.git" class="view-project"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+              
+            </div>
+
+            <!-- Portfolio Item 2 -->
+            <div class="work">
+                
+                <img src="images/portfolio-item-2.jpg" alt="Portfolio Item 2">
+                <div class="layer">
+                    <h3>Hotel Management System</h3>
+                    <p>A full-stack web app that streamlines hotel operations by managing bookings, customer data, and secure authentication, ensuring efficient workflows and a seamless user experience.</p>
+                    <a href="https://github.com/Adane23/hotel-management-system.git" class="view-project"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            
+            </div>
+            <!-- Portfolio Item 3 -->
+            <div class="work">
+                
+                <img src="images/portfolio-item-3.jpg" alt="Portfolio Item 3">
+                <div class="layer">
+                    <h3>To-Do List Web Application</h3>
+                    <p>A user-friendly app for managing daily tasks, featuring task creation, updates, deletion, and tracking to boost productivity.</p>
+                    <a href="https://github.com/Adane23/to-do-list-app.git" class="view-project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+               
+            </div>
+            <!-- Portfolio Item 4 -->
+            <div class="work">
+            
+                <img src="images/portfolio-item-4.jpg" alt="Portfolio Item 4">
+                <div class="layer">
+                    <h3>Public School Student Information System</h3>
+                    <p> A relational database project designed to simplify and streamline the management of student records in public schools.</p>
+                    <a href="https://github.com/Adane23/Db-Project-Public-School-Student-info.git"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+              
+            </div>
+            <!-- Portfolio Item 5 -->
+            <div class="work">
+                
+                <img src="images/portfolio-item-5.jpg" alt="Portfolio Item 5">
+                <div class="layer">
+                    <h3>E-Commerce Amazon</h3>
+                    <p>A full-stack React app replicating Amazon's core features, offering a scalable platform for online shopping with a user-friendly experience.</p>
+                    <a href="https://github.com/Adane23/amazon-project.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                
+            </div>
+            <!-- Portfolio Item 6 -->
+            <div class="work">
+                
+                <img src="images/portfolio-item-6.jpg" alt="Portfolio Item 6">
+                <div class="layer">
+                    <h3>Netflix</h3>
+                    <p>A dynamic React app replicating Netflix, featuring a user-friendly interface for browsing and streaming content with secure account management.</p>
+                    <a href="https://github.com/Adane23/netflix-project.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>  
+            </div>
+
+            <div class="work">
+                
+                <img src="images/portfolio-item-7.jpg" alt="Portfolio Item 6">
+                <div class="layer">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>A responsive and visually appealing web application showcasing my skills, projects, and achievements. Built with modern web technologies, the portfolio features dynamic sections for services, projects, and contact information, along with seamless navigation and interactive design to enhance user experience.</p>
+                    <a href="https://github.com/Adane23/netflix-project.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>  
+            </div>
+
+            <a href="#" class="btn">See More</a>
+        </div>
+
+ </div>
+
+<!-- Contact -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>n.adane3@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i>+469-563-0571</p>
+                <div class="social-icons">
+                    <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
+                    <a href="https://www.linkedin.com/in/adane-berhanu23"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Adane23"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="https://www.hackerrank.com/profile/n_adane3"><i class="fa-brands fa-hackerrank"></i></i></a>
+                </div>
+
+                <a href="./documents/Adane Berhanu Resume.pdf" download class="btn btn2">Download Resume</a>
+                <a href="./documents/AdaneBerhanu Full Stack Certification.pdf" download class="btn btn2">Certificate</a>
+            </div>
+            <div class="contact-right">
+                <h1>Send Message</h1>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="7" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form> 
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+ <!-- Footer -->
+ <div class="coyright">
+    <p>
+        Copyright <i class="fa-regular fa-copyright"></i> 
+        Adane Berhanu | 
+        <span id="year"></span> 
+        <i class="fa-solid fa-heart"></i> All rights reserved
+    </p>
+</div>
+ </div>
+ <script src="script.js"></script>
+</body>
+</html>
